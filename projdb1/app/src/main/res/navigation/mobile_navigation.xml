@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_Payment">
+
+    <fragment
+        android:id="@+id/nav_Payment"
+        android:name="by.belstu.fit.projdb1.ui.Payment.PaymentFragment"
+        android:label="@string/menu_Payment"
+        tools:layout="@layout/fragment_payment" />
+
+    <fragment
+        android:id="@+id/nav_Card"
+        android:name="by.belstu.fit.projdb1.ui.Card.CardFragment"
+        android:label="@string/menu_Card"
+        tools:layout="@layout/fragment_card" />
+
+    <fragment
+        android:id="@+id/nav_statistic"
+        android:name="by.belstu.fit.projdb1.ui.statistic.statisticFragment"
+        android:label="@string/menu_statistic"
+        tools:layout="@layout/fragment_statistic" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_tools"-->
+<!--        android:name="by.belstu.fit.projdb1.ui.tools.ToolsFragment"-->
+<!--        android:label="@string/menu_tools"-->
+<!--        tools:layout="@layout/fragment_tools" />-->
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="by.belstu.fit.projdb1.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="by.belstu.fit.projdb1.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+</navigation>

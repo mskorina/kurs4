@@ -1,0 +1,28 @@
+sql server
+nano /etc/postgresql/11/main/pg_hba.conf
+
+local all all md5
+
+----
+
+pgadmin
+pg1799
+----
+listen_addresses = '*'
+----
+
+SQL
+---
+CREATE EXTENSION IF NOT EXISTS pgcrypto;
+
+run API
+
+uvicorn main:app --proxy-headers --uds /tmp/uvicorn.sock
+uvicorn main:app --proxy-headers --ssl-keyfile=key.pem --ssl-certfile=cert.pem --uds /tmp/uvicorn.sock
+
+run web (nodejs)
+
+run "serve" in vuedepp folder
+"serve" - node.js module
+
+

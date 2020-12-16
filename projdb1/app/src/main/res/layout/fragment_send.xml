@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<EditText
+    android:id="@+id/loginedit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textEmailAddress"
+    android:hint="Логин(почта)"
+    />
+    <EditText
+        android:id="@+id/passedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:layout_below="@id/loginedit"
+        />
+    <Button
+        android:id="@+id/signbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passedit"
+        android:text="Вход"/>
+    <Button
+        android:id="@+id/signupbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signbutton"
+        android:text="Регистрация"/>
+    <Button
+        android:id="@+id/logoutbutton"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выход"/>
+    <Button
+        android:id="@+id/syncbutton"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoutbutton"
+        android:text="Синхронизировать"/>
+    <Button
+        android:id="@+id/synccheckbutton"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/syncbutton"
+        android:text="Проверка соединения с сервером"/>
+</RelativeLayout>

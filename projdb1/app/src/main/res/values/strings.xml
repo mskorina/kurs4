@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WalletLite</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">WalletLite</string>
+    <string name="nav_header_subtitle">Beta</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Экстренный сброс</string>
+
+    <string name="menu_Payment">Платежи</string>
+    <string name="menu_Card">Карты/Счета</string>
+    <string name="menu_statistic">Статистика</string>
+    <string name="menu_tools">Инструменты</string>
+    <string name="menu_share">Экспорт/импорт</string>
+    <string name="menu_send">Синхронизация</string>
+</resources>
